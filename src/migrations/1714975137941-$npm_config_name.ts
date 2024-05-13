@@ -1,0 +1,61 @@
+import { MigrationInterface, QueryRunner } from 'typeorm';
+
+export class $npmConfigName1714975137941 implements MigrationInterface {
+  public async up(queryRunner: QueryRunner): Promise<void> {
+    await queryRunner.query(`
+  INSERT INTO Record (recordID, name, author_name, price, score, description) VALUES
+('a9c94b0e-96a8-4e75-aa0a-43a3e86f3d6a', 'The Dark Side of the Moon', 'Pink Floyd', 25.99, 4, 'description1'),
+('a1b74b0e-96a8-4e75-aa0a-43a3e86f3d6a', 'Thriller', 'Michael Jackson', 19.99, 4.8, 'description2'),
+('a2b74b0e-96a8-4e75-aa0a-43a3e86f3d6a', 'Abbey Road', 'The Beatles', 22.50, 4.7,  'description3'),
+('a3b74b0e-96a8-4e75-aa0a-43a3e86f3d6a', 'Rumours', 'Fleetwood Mac', 18.75, 4.6, 'description4'),
+('a4b74b0e-96a8-4e75-aa0a-43a3e86f3d6a', 'Back in Black', 'AC/DC', 21.99, 4.9, 'description5'),
+('a5b74b0e-96a8-4e75-aa0a-43a3e86f3d6a', 'Hotel California', 'Eagles', 24.50, 4.7, 'description6'),
+('a6b74b0e-96a8-4e75-aa0a-43a3e86f3d6a', 'Nevermind', 'Nirvana', 20.25, 4.8, 'description7'),
+('a7b74b0e-96a8-4e75-aa0a-43a3e86f3d6a', 'The Queen Is Dead', 'The Smiths', 17.99, 4.5, 'description8'),
+('a9b74b0e-96a8-4e75-aa0a-43a3e86f3d6a', 'Led Zeppelin IV', 'Led Zeppelin', 23.75, 4.6, 'description9'),
+('a1a1a3a4-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'Exile on Main St.', 'The Rolling Stones', 19.50, 4.7, 'description10'),
+('a1a2a3a4-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'Appetite for Destruction', 'Guns N Roses', 20.99, 4.8, 'description11'),
+('a1a3a3a4-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'Born to Run', 'Bruce Springsteen', 18.50, 4.6, 'description12'),
+('a1a4a3a4-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'The Wall', 'Pink Floyd', 26.99, 4.9, 'description12'),
+('a1a5a3a4-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'Sgt. Peppers Lonely Hearts Club Band', 'The Beatles', 21.50, 4.7, 'description13'),
+('a1a6a3a4-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'Nevermind', 'Nirvana', 20.25, 4.8, 'description14'),
+('a1a7a3a4-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'The Queen Is Dead', 'The Smiths', 17.99, 4.5, 'description15'),
+('a1a8a3a4-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'Led Zeppelin IV', 'Led Zeppelin', 23.75, 4.6, 'description16'),
+('a1a9a3a4-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'Appetite for Destruction', 'Guns N Roses', 20.99, 4.8, 'description17'),
+('a1a1c1a4-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'Born to Run', 'Bruce Springsteen', 18.50, 4.6, 'description18'),
+('a1a1c2a4-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'The Wall', 'Pink Floyd', 26.99, 4.9, 'description19'),
+('a1a1c3a4-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'Sgt. Peppers Lonely Hearts Club Band', 'The Beatles', 21.50, 4.7, 'description20'),
+('a1a1c4a4-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'Nevermind', 'Nirvana', 20.25, 4.8, 'description21'),
+('a1a1c5a4-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'The Queen Is Dead', 'The Smiths', 17.99, 4.5, 'description22'),
+('a1a1c6a4-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'Led Zeppelin IV', 'Led Zeppelin', 23.75, 4.6, 'description23'),
+('a1a1c7a4-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'Appetite for Destruction', 'Guns N Roses', 20.99, 4.8, 'description24'),
+('a1a1c8a4-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'Born to Run', 'Bruce Springsteen', 18.50, 4.6, 'description25'),
+('a1a1c9a4-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'The Wall', 'Pink Floyd', 26.99, 4.9, 'description26'),
+('a1a1c1d1-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'Sgt. Peppers Lonely Hearts Club Band', 'The Beatles', 21.50, 4.7, 'description27'),
+('a1a1c1d2-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'Nevermind', 'Nirvana', 20.25, 4.8, 'description28'),
+('a1a1c1d3-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'The Queen Is Dead', 'The Smiths', 17.99, 4.5, 'description29'),
+('a1a1c1d4-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'Led Zeppelin IV', 'Led Zeppelin', 23.75, 4.6, 'description30'),
+('a1a1c1d5-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'Appetite for Destruction', 'Guns N Roses', 20.99, 4.8, 'description31'),
+('a1a1c1d6-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'Born to Run', 'Bruce Springsteen', 18.50, 4.6, 'description32'),
+('a1a1c1d7-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'The Wall', 'Pink Floyd', 26.99, 4.9, 'description33'), 
+('a1a1c1d8-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'Sgt. Peppers Lonely Hearts Club Band', 'The Beatles', 21.50, 4.7, 'description34'),
+('a1a1c1d9-5b6c-4d4e-8f9a-0b1c2d3e4f5', 'Nevermind', 'Nirvana', 20.25, 4.8, 'description35'),
+('a1a1c1d1-1b6c-4d4e-8f9a-0b1c2d3e4f5', 'The Queen Is Dead', 'The Smiths', 17.99, 4.5, 'description36'),
+('a1a1c1d1-2b6c-4d4e-8f9a-0b1c2d3e4f5', 'Led Zeppelin IV', 'Led Zeppelin', 23.75, 4.6, 'description37'),
+('d1d2d3d4-5e6f-1a4b-8c9d-0e1f2a3b4c5', 'Appetite for Destruction', 'Guns N Roses', 20.99, 4.8, 'description38'),
+('e1e2e3e4-5f6a-2b4c-8d9e-0f1a2b3c4d5', 'Born to Run', 'Bruce Springsteen', 18.50, 4.6, 'description39'),
+('f1f2f3f4-1a6b-4c4d-8e9f-0a1b2c3d4e5', 'The Wall', 'Pink Floyd', 26.99, 4.9, 'description40'),
+('a4a5a6a7-2b9c-4d4e-8f9a-0b1c2d3e4f5', 'Sgt. Peppers Lonely Hearts Club Band', 'The Beatles', 21.50, 4.7, 'description41'),
+('c1c2c3c4-3d6e-4f4a-bcde-f1f2f3f4f5f', 'Nevermind', 'Nirvana', 20.25, 4.8, 'description42'),
+('b1b2b3b4-4c6d-4e4f-8a9b-0c1d2e3f4a5', 'The Queen Is Dead', 'The Smiths', 17.99, 4.5, 'description43'),
+('c2c3c4c5-5d7e-4f4a-bcde-f1f2f3f4f5f', 'Led Zeppelin IV', 'Led Zeppelin', 23.75, 4.6, 'description44'),
+('d1d2d3d4-6e6f-4a4b-8c9d-0e1f2a3b4c5', 'Appetite for Destruction', 'Guns N Roses', 20.99, 4.8, 'description45'),
+('e1e2e3e4-7f6a-4b4c-8d9e-0f1a2b3c4d5', 'Born to Run', 'Bruce Springsteen', 18.50, 4.6, 'description46'),
+('f1f2f3f4-8a6b-4c4d-8e9f-0a1b2c3d4e5', 'The Wall', 'Pink Floyd', 26.99, 4.9, 'description47'),
+('a4a5a6a7-9b9c-4d4e-8f9a-0b1c2d3e4f5', 'Sgt. Peppers Lonely Hearts Club Band', 'The Beatles', 21.50, 4.7, 'description48'),
+('c1c2c3c4-5d6e-4f4a-bcde-f3f2f3f4f5f', 'Nevermind', 'Nirvana', 20.25, 4.8, 'description49'),
+('b1b2b3b4-5c6d-4e4f-8a9b-0c2d2e3f4a5', 'The Queen Is Dead', 'The Smiths', 17.99, 4.5, 'description50')
+`);
+  }
+  public async down(queryRunner: QueryRunner): Promise<void> {}
+}
